@@ -1,0 +1,22 @@
+<web-app>
+  <servlet>
+     <servlet-name>Validate</servlet-name>
+     <servlet-class>Validate</servlet-class>
+    
+     <init-param>
+        <param-name>Aaron</param-name>
+        <param-value>love</param-value>
+    </init-param>
+     <init-param>
+        <param-name>Kenji</param-name>
+        <param-value>jello</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>Validate</servlet-name>
+     <url-pattern>/Validate</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+     <welcome-file>form.html</welcome-file>
+  </welcome-file-list>
+</web-app>

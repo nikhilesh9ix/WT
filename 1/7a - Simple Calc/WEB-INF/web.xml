@@ -1,0 +1,10 @@
+<web-app>
+  <servlet>
+    <servlet-name>Calci</servlet-name>
+    <servlet-class>Calci</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>Calci</servlet-name>
+     <url-pattern>/Calci</url-pattern>
+  </servlet-mapping>
+</web-app>
