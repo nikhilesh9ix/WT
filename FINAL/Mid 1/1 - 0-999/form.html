@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Number to Words</title>
+    </head>
+    <body>
+        <input id="i" oninput="c()" placeholder="Enter 0-999">
+        <input id="o" readonly placeholder="Result">
+        <script>
+            function c()
+            {
+                let n=+document.getElementById('i').value;
+                let r=document.getElementById('o');
+                if(isNaN(n))r.value='not a number';
+                else if(n<0||n>999)r.value='out of range';
+                else r.value=w(n);
+            }
+
+            function w(n)
+            {
+                let o=['','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen'];
+                let t=['','','twenty','thirty','forty','fifty','sixty','seventy','eighty','ninety'];
+                if(n==0)return 'zero';
+                let s='';
+                if(n>=100){s+=o[Math.floor(n/100)]+' hundred';n%=100;if(n)s+=' ';}
+                if(n>=20){s+=t[Math.floor(n/10)];n%=10;if(n)s+=' ';}
+                if(n>0)s+=o[n];
+                return s;
+            }
+        </script>
+    </body>
+</html>

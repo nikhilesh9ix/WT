@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Text Counter</title>
+  </head>
+  <body>
+    <textarea id="t" rows="10" cols="50" placeholder="Enter your text here..."></textarea><br>
+    <button onclick="s()">Submit</button>
+    <script>
+      function s() {
+        let x = document.getElementById('t').value;
+        let c = x.length;
+        let w = x.trim() ? x.trim().split(/\s+/).length : 0;
+        let l = x ? x.split('\n').length : 0;
+        alert(`Characters: ${c}\nWords: ${w}\nLines: ${l}`);
+      }
+    </script>
+  </body>
+</html>

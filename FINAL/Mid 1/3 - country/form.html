@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Country Capital Selector</title>
+    <style>
+      .capital {
+        color: black;
+        font-weight: normal;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <select id="country" onchange="showCapital()">
+      <option value="">Select a country</option>
+      <option value="USA">USA</option>
+      <option value="France">France</option>
+      <option value="Japan">Japan</option>
+      <option value="Brazil">Brazil</option>
+      <option value="India">India</option>
+    </select>
+    <span id="capital" class="capital"></span>
+
+    <script>
+      function showCapital() {
+        const country = document.getElementById('country').value;
+        const capitalElement = document.getElementById('capital');
+        
+        const capitals = {
+          'USA': 'Washington D.C.',
+          'France': 'Paris',
+          'Japan': 'Tokyo',
+          'Brazil': 'Brasília',
+          'India': 'New Delhi'
+        };
+        
+        capitalElement.textContent = capitals[country] || '';
+      }
+    </script>
+  </body>
+</html>

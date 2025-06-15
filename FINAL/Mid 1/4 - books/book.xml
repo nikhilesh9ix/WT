@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+  <book>
+    <title>The Great Gatsby</title>
+    <author>F. Scott Fitzgerald</author>
+    <isbn>978-0-7432-7356-5</isbn>
+    <publisher>Scribner</publisher>
+    <edition>1st Edition</edition>
+    <price>12.99</price>
+  </book>
+</books>
